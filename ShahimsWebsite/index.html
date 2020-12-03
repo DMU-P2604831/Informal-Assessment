@@ -6,18 +6,45 @@
     <title></title>
     <link href="css\style.css"  rel="stylesheet" type="text/css">
   </head>
+  
+  <!-- ***
+       You've linked in an external stylesheet above. You should use this for all your style rules.
+
+       This includes setting the background colour, and anything else using the style attribute.
+       *** -->
+  
   <body bgcolor='#4bf266'>
 
+    <!-- ***
+         All image elements should also have an alt attribute providing a short description
+         of the image. This is what would be read by a screen reader for blind or partially sighted
+         users, so is very important. For example:
+
+          <img src="img\Snapchat-1218388175.jpg" alt="Shahim">
+         *** -->
 <img style="max-width: 100%; border: 5px solid white; float: right; height: 200px" src="img\Snapchat-1218388175.jpg"><h1>Shahim Chowdhury</h1>
 <h2>About myself</h2>
 
 <div class="">
+  <!-- ***
+       Use your css file for style things. Also, paragraph elements are 100% by default anyway.
+       *** -->
   <p width=100%>Hello! My name is Shahim, im 19 and currently studying media production. I have many intrests such as gaming, tech and editing videos and images. I also enjoiy going to the gym to keep healthy and strong</p>
 </div>
 
 <h2 width=100%>My experience with editing</h2>
 <p width=100%>5 Years ago My journey with editing videos started when I was watching Call of Duty montages. I found it very fascinating how people are able to sync music with videos so cleanly and make videos many times better. I ended up spending hours looking at tutorials of how to edit on Sony Vegas which was barley able to run on my laptop, infact my laptop was so slow that it took 5 hours to render a 2 minute video in 1080p. Heres a video below of a edit I did 5 years ago for my youtube channel (Warning its bad).</p>
 
+    <!-- ***
+         With attributes that are either true or false, like controls here, you don't need to put =true. Just
+         including the name of the attribute will set it to true. For example:
+
+         <video controls>
+
+         It's good that you've provided a fallback here for browsers that don't support the audio element. However, the link won't work.
+         The location you've specified for the file is an absolute URL pointing to a location on your specific computer. This should just be
+         href="video/Black Ops 3_ Mini Edit _ By Shamz.mp4"
+         *** -->
 <video controls=true width="640" height="360">
 
 <source src="video\Black Ops 3_ Mini Edit _ By Shamz.mp4" type="video/mp4">
@@ -28,6 +55,20 @@
 
 <h2 width=100%>Games I currently play</h2>
 <p>
+<!-- ***
+     Lists don't go inside paragraphs. 
+
+     You do need to start and end the list though. There are two types, ordered lists <ol> and unordered lists <ul>
+
+     Ordered lists have numbers or letters, whilst unordered just have bullet points. Your list should use one of these,
+     with list items <li> inside. For example:
+
+     <ol>
+        <li> <a href="https://playoverwatch.com/en-gb/">Overwatch</a></li>
+        <li> <a href="https://playvalorant.com/en-gb/">Valorant</a></li>
+     </ol>
+     *** -->
+  
 <li> <a href="https://playoverwatch.com/en-gb/">Overwatch</a></li>
 <li> <a href="https://playvalorant.com/en-gb/">Valorant</a></li>
 <li> <a href="https://www.callofduty.com/uk/en/warzone">Call Of Duty:Warzone</a></li>
@@ -39,7 +80,9 @@
 
 </p>
 
-
+<!-- ***
+     You've got a stray </video> tag here. You're also missing the closing </body> tag.
+     *** -->
 </video>
 
 </html>
